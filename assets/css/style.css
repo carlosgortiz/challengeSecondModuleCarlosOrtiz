@@ -61,16 +61,6 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
     width: 75%;
     display: inline-block;
@@ -78,32 +68,52 @@ p {
 }
 
 .about-me {
-    margin-bottom: 20px;
+    margin-left: 32px;
+    margin-bottom: 0px;
     padding: 0px;
-    height: 150px;
+    height: 120px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    font-size: large;
     background-color: #d9dcd6;
     color: #205a77e1;
+}
+
+.about-me li {
+    list-style-type: disc;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.about-me img {
+    display: block;
+    margin: 0px 0;
+    max-width: 120px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
 
 .work {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     padding: 0px;
-    height: 330px;
+    height: 256px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #d9dcd6;
     color: #205a77e1;
 
-    flex: 1;
+    flex: 2;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: inherit;
+    justify-content:left;
 }
 
 .contact-me {
+    margin-left: 32px;
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 0px;
     height: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #d9dcd6;
@@ -122,20 +132,24 @@ p {
 }
 
 .options-about-me {
+    margin-left: 32px;
     margin-bottom: 32px;
     color: #1d4b62;
     height: 150px;
+    max-height: 100px;
 }
 
 .options-work {
     margin-bottom: 32px;
     color: #1d4b62;
-    height: 330px;
+    height: 256px;
 }
 
 .options-contact-me {
+    margin-left: 32px;
     margin-bottom: 32px;
     color: #1d4b62;
+    height: 150px;
 }
 
 .options-about-me h1 {
@@ -162,11 +176,13 @@ p {
 }
 
 .boxes {
+    flex: 1 0 0;
+    padding: 10px;
+
     border-style: solid;
     border-width: 1px;
-    border-radius: 50px;
-    padding: 10px;
-    flex: 0 0 400px;
+    border-radius: 10px;
+
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 10px;
 }
@@ -199,8 +215,9 @@ p {
     color: #205a77e1;
 }
 
-.contact-info ul {
-    list-style-type: disc;
+.contact-info li {
+    list-style-type: none;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
